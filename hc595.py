@@ -1,3 +1,19 @@
+"""" hc595 is a MicroPython driver for the 74hc595 shift register.
+
+Author:
+  18 August 2022 - Alex Gathua
+  alexgathua3@gmail.com
+  
+74hc595 -> ESP32
+--------------
+GND -> GND
+VCC -> 3.3V/5V
+SER -> any ouput pin i.e gpio 12
+RCLK -> any ouput pin i.e gpio 14
+SRCLK -> any ouput pin i.e gpio 27
+SRCLR -> RST or 3.3V/5V
+
+"""
 from machine import Pin
 
 class Hc595:
